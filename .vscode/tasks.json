@@ -9,9 +9,9 @@
         },
         {
             "type": "npm",
-            "script": "sass",
+            "script": "postcss",
             "problemMatcher": [],
-            "label": "npm: sass"
+            "label": "npm: postcss"
         },
         {
             "label": "Start Live Server",
@@ -21,7 +21,7 @@
             "label": "Dev",
             "dependsOn": [
                 "npm: pugjs",
-                "npm: sass",
+                "npm: postcss",
                 "Start Live Server"
             ],
             "problemMatcher": [],

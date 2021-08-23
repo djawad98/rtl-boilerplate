@@ -1,0 +1,6 @@
+{
+    "liveServer.settings.mount": [
+        // ["/", "../build"]
+    ],
+    "liveServer.settings.root": "/build",
+}

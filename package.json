@@ -4,7 +4,7 @@
   "description": "A fast biolerplate for starting a ltr to rtl project",
   "main": "main.js",
   "scripts": {
-      "pugjs": "pug ./src/pug/templates --out ./build --watch --obj ./pug.config.js",
+      "pugjs": "pug ./src/pug/templates --out ./build --watch --obj ./pug.config.json",
       "postcss": "postcss ./src/custom.scss -o ./build/custom.css --watch",
       "rtlcss": "rtlcss --directory ./public/css/"
   },

@@ -32,9 +32,15 @@
         },
         {
             "label": "Prod",
-            "type": "npm",
-            "problemMatcher": [],
-            "script": "prod"
+            "type": "shell",
+            "command": "./build.sh",
+            "problemMatcher": []
         },
+        {
+            "type": "npm",
+            "script": "rtlcss",
+            "problemMatcher": [],
+            "label": "rtlcss",
+        }
     ]
 }

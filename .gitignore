@@ -1,6 +1,5 @@
 /node_modules
-/build/*
-!/build/Content
+/build
 *.psd
 *.zip
 *.mp4

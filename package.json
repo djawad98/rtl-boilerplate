@@ -4,29 +4,30 @@
   "description": "A fast biolerplate for starting a ltr to rtl project",
   "main": "main.js",
   "scripts": {
-      "pugjs": "pug ./src/pug/templates --out ./build --watch --obj ./pug.config.json",
-      "postcss": "postcss ./src/custom.scss -o ./build/custom.css --watch",
-      "rtlcss": "rtlcss --directory ./public/css/"
+    "pugjs": "pug ./src/pug/templates --out ./build --watch --obj ./pug.config.json",
+    "postcss": "postcss ./src/custom.scss -o ./build/custom.css --watch",
+    "rtlcss": "rtlcss --directory ./public/css/"
   },
   "author": "djawad98",
   "license": "ISC",
   "devDependencies": {
-      "autoprefixer": "^10.3.2",
-      "cssnano": "^5.0.8",
-      "postcss": "^8.3.6",
-      "postcss-cli": "^8.3.1",
-      "postcss-import": "^14.0.2",
-      "postcss-nested": "^5.0.6",
-      "pug": "^3.0.2",
-      "pug-cli": "^1.0.0-alpha6",
-      "rtlcss": "^3.3.0"
+    "autoprefixer": "^10.3.2",
+    "cssnano": "^5.0.8",
+    "postcss": "^8.3.6",
+    "postcss-advanced-variables": "^3.0.1",
+    "postcss-cli": "^8.3.1",
+    "postcss-extend-rule": "^3.0.0",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.6",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6",
+    "rtlcss": "^3.3.0"
   },
   "browserslist": [
-      "defaults",
-      "not dead",
-      "> 1%",
-      "IE > 11",
-      "last 2 versions"
-  ],
-  "dependencies": {}
+    "defaults",
+    "not dead",
+    "> 1%",
+    "IE > 11",
+    "last 2 versions"
+  ]
 }

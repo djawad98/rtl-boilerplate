@@ -3,4 +3,9 @@
         ["/Content", "./public"]
     ],
     "liveServer.settings.root": "./build",
+    "VsCodeTaskButtons.tasks": [
+        { "label": "🐱‍🏍", "task": "Dev" },
+        { "label": "Pug", "task": "npm: pugjs" },
+        { "label": "🎁", "task": "Prod" },
+    ],
 }

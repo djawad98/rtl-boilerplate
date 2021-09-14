@@ -4,8 +4,9 @@ module.exports = {
     map: isDev && { inline: false },
     plugins: [
         require('postcss-import'),
+        require('postcss-advanced-variables'),
+        require('postcss-extend-rule'),
         require('postcss-nested'),
-        require('tailwindcss'),
         require('autoprefixer'),
         require('cssnano'),
     ]

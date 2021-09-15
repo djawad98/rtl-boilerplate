@@ -3,13 +3,13 @@
     "tasks": [
         {
             "type": "npm",
-            "script": "pugjs",
+            "script": "pugjs:watch",
             "problemMatcher": [],
             "label": "npm: pugjs"
         },
         {
             "type": "npm",
-            "script": "postcss",
+            "script": "postcss:watch",
             "problemMatcher": [],
             "label": "npm: postcss"
         },

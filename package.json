@@ -4,14 +4,17 @@
   "description": "A fast biolerplate for starting a ltr to rtl project",
   "main": "main.js",
   "scripts": {
-    "pugjs": "pug ./src/pug/templates --out ./build --watch --obj ./pug.config.json",
-    "postcss": "postcss ./src/custom.scss -o ./build/custom.css --watch",
+    "pugjs": "pug ./src/pug/templates --out ./build",
+    "postcss": "postcss ./src/custom.scss -o ./build/custom.css",
+    "pugjs:watch": "cross-env NODE_ENV=development npm run pugjs -- --watch",
+    "postcss:watch": "cross-env NODE_ENV=development npm run postcss -- --watch",
     "rtlcss": "rtlcss --directory ./public/css/"
   },
   "author": "djawad98",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.3.2",
+    "cross-env": "^7.0.3",
     "cssnano": "^5.0.8",
     "postcss": "^8.3.6",
     "postcss-advanced-variables": "^3.0.1",

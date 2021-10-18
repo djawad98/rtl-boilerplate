@@ -14,29 +14,35 @@
         certificates: []
     };
 
-    function* gen(){
-        let i = 0;
-        while(true)
-            yield i++;
-    }
-
-    const gene = gen();
-
     const utils = {
-        getNum(len){
-            return (1+gene.next().value) % len;
-        },
         zeroPad(str){
             return ("0"+str).slice(-2);
+        },
+        getRand(from = 1, to = 10){
+          const range = to - from + 1 ;
+          return Math.ceil(Math.random() * range);
         }
     }
 
 mixin aparat(color="red", w="15", h="15")
   .
+    <style>
+      .aparat-logo {
+        position: relative;
+        top: -3px;
+      }
+
+      .aparat-logo:hover {
+        color: inherit!important;
+      }
+
+      .cls-1{fill:currentColor;}
+
+    </style>
     <span class="aparat-logo" style='color:#{color};'>
       <svg xmlns="http://www.w3.org/2000/svg" width="#{w}" height="#{h}" viewBox="0 0 68.33 68.33">
       <defs>
-        <style>.cls-1{fill:currentColor;}</style>
+        <style></style>
       </defs>
       <g id="Layer_2" data-name="Layer 2">
         <g id="brand">

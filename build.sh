@@ -16,7 +16,7 @@ cp -rf ./build/* "$build_folder"
 cp -rf ./public/* "$build_folder"/Content
 
 # Delete useless dev files
-rm "$build_folder"/*.map
+# rm "$build_folder"/*.map
 
 # Make a zip file recursively and delete the source files
-rar a -r -dr "$build_folder".zip "$build_folder"
+#rar a -r -dr "$build_folder".zip "$build_folder"

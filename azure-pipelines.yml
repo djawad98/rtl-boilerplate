@@ -1,0 +1,34 @@
+# Node.js
+# Build a general Node.js project with npm.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+  - master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '12.x'
+    checkLatest: true
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+    chmod +x ./build.sh && ./build.sh
+  displayName: 'npm install and build'
+- task: FtpUpload@2
+  inputs:
+    credentialsOption: 'inputs'
+    serverUrl: 'ftp://demo.foolad724.com'
+    username: 'foolad_amp'
+    password: '1hY0f*m1'
+    rootDirectory: 'dist'
+    filePatterns: '**'
+    remoteDirectory: '/'
+    clean: true
+    preservePaths: true
+    trustSSL: true

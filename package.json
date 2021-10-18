@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "pugjs": "pug ./src/pug/templates --out ./build",
-    "postcss": "postcss ./src/custom.scss -o ./build/custom.css",
+    "postcss": "postcss ./src/{custom,vendors}.scss --ext .css --dir ./build",
     "pugjs:watch": "cross-env NODE_ENV=development npm run pugjs -- --watch",
     "postcss:watch": "cross-env NODE_ENV=development npm run postcss -- --watch",
     "rtlcss": "rtlcss --directory ./public/css/"
@@ -22,6 +22,7 @@
     "postcss-extend-rule": "^3.0.0",
     "postcss-import": "^14.0.2",
     "postcss-nested": "^5.0.6",
+    "postcss-scss": "^4.0.0",
     "pug": "^3.0.2",
     "pug-cli": "^1.0.0-alpha6",
     "rtlcss": "^3.3.0"

@@ -23,11 +23,13 @@ steps:
 - task: FtpUpload@2
   inputs:
     credentialsOption: 'inputs'
-    serverUrl: 'ftp://demo.foolad724.com'
-    username: 'foolad_amp'
-    password: '1hY0f*m1'
+    # serverUrl: 'ftp://demo.foolad724.com'
+    # username: 'foolad_amp'
+    # password: '1hY0f*m1'
     rootDirectory: 'dist'
-    filePatterns: '**'
+    filePatterns: |
+      **
+      *
     remoteDirectory: '/'
     clean: true
     preservePaths: true

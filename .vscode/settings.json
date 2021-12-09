@@ -6,6 +6,7 @@
     "VsCodeTaskButtons.tasks": [
         { "label": "🐱‍🏍", "task": "Dev" },
         { "label": "Pug", "task": "npm: pugjs" },
+        { "label": "Postcss", "task": "npm: postcss" },
         { "label": "🎁", "task": "Prod" },
     ],
 }

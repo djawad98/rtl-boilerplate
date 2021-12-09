@@ -3,6 +3,7 @@ build_folder="./dist"
 # Re-Build the project
 ./node_modules/.bin/cross-env NODE_ENV=production npm run pugjs
 ./node_modules/.bin/cross-env NODE_ENV=production npm run postcss
+./node_modules/.bin/cross-env NODE_ENV=production npm run tailwind
 
 mkdir "$build_folder"
 cd "$build_folder"

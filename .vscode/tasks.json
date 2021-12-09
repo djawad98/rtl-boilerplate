@@ -1,46 +1,46 @@
 {
     "version": "2.0.0",
     "tasks": [
-        {
-            "type": "npm",
-            "script": "pugjs:watch",
-            "problemMatcher": [],
-            "label": "npm: pugjs"
-        },
-        {
-            "type": "npm",
-            "script": "postcss:watch",
-            "problemMatcher": [],
-            "label": "npm: postcss"
-        },
-        {
-            "label": "Start Live Server",
-            "command": "${command:extension.liveServer.goOnline}"
-        },
-        {
-            "label": "Dev",
-            "dependsOn": [
-                "npm: pugjs",
-                "npm: postcss",
-                "Start Live Server"
-            ],
-            "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "label": "Prod",
-            "type": "shell",
-            "command": "./build.sh",
-            "problemMatcher": []
-        },
-        {
-            "type": "npm",
-            "script": "rtlcss",
-            "problemMatcher": [],
-            "label": "rtlcss",
+      {
+        "type": "npm",
+        "script": "pugjs:watch",
+        "problemMatcher": [],
+        "label": "npm: pugjs"
+      },
+      {
+        "type": "npm",
+        "script": "postcss:watch",
+        "problemMatcher": [],
+        "label": "npm: postcss"
+      },
+      {
+        "label": "Start Live Server",
+        "command": "${command:extension.liveServer.goOnline}"
+      },
+      {
+        "label": "Dev",
+        "dependsOn": [
+          "npm: pugjs",
+          "npm: postcss",
+          "Start Live Server"
+        ],
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
         }
+      },
+      {
+        "label": "Prod",
+        "type": "shell",
+        "command": "./build.sh",
+        "problemMatcher": []
+      },
+      {
+        "type": "npm",
+        "script": "rtlcss",
+        "problemMatcher": [],
+        "label": "rtlcss",
+      }
     ]
-}
+  }

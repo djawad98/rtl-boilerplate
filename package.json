@@ -5,14 +5,15 @@
   "main": "main.js",
   "scripts": {
     "pugjs": "pug ./src/pug/templates --out ./build",
-    "postcss": "postcss ./src/{custom,vendors}.scss --ext .css --dir ./build",
     "pugjs:watch": "cross-env NODE_ENV=development npm run pugjs -- --watch",
-    "postcss:watch": "cross-env NODE_ENV=development npm run postcss -- --watch",
+    "postcss": "postcss ./src/{custom,vendors}.scss --ext .css --dir ./public/css",
+    "postcss:watch": "cross-env TAILWIND_MODE=watch NODE_ENV=development npm run postcss -- --watch",
+
     "rtlcss": "rtlcss --directory ./public/css/"
   },
-  "author": "djawad98",
   "license": "ISC",
   "devDependencies": {
+    "@tailwindcss/nesting": "0.0.0-insiders.565cd3e",
     "autoprefixer": "^10.3.2",
     "cross-env": "^7.0.3",
     "cssnano": "^5.0.8",
@@ -21,11 +22,12 @@
     "postcss-cli": "^8.3.1",
     "postcss-extend-rule": "^3.0.0",
     "postcss-import": "^14.0.2",
-    "postcss-nested": "^5.0.6",
     "postcss-scss": "^4.0.0",
     "pug": "^3.0.2",
     "pug-cli": "^1.0.0-alpha6",
-    "rtlcss": "^3.3.0"
+    "rtlcss": "^3.3.0",
+    "sass": "^1.43.4",
+    "tailwindcss": "^2.2.19"
   },
   "browserslist": [
     "defaults",
@@ -33,5 +35,5 @@
     "> 1%",
     "IE > 11",
     "last 2 versions"
-  ]
+  ],
 }

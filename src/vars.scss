@@ -1,0 +1,4 @@
+@use "sass:string";
+
+$prefered-font: iranyekanweb;
+$font-url-prefix: string.unquote("/content/fonts/#{$prefered-font}");

@@ -11,7 +11,7 @@ module.exports = {
       safelist: [],
 
       extract: {
-        pug: content => content.match(/[^<>"'`\s]*/gm),
+        // pug: content => content.match(/[^<>"'`\s]*/gm),
       },
 
 
